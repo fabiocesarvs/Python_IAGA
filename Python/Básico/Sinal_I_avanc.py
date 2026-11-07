@@ -1,0 +1,38 @@
+def sinal_I(n):
+    if (n < 0):
+        return("<<< NEGATIVO >>>")
+
+    if (n == 0):
+        return("<<< NEUTRO >>>")
+
+    if (n > 0):
+        return("<<< POSITIVO >>>")
+
+def sinal_II(n):
+    if (n < 0):
+        return("<<< NEGATIVO >>>")
+    else:
+        if (n == 0):
+            return("<<< NEUTRO >>>")
+        else:
+            return("<<< POSITIVO >>>")
+        
+def sinal_III(n):
+    if (n < 0):
+        return("<<< NEGATIVO >>>")
+    elif (n == 0):
+        return("<<< NEUTRO >>>")
+    else:
+        return("<<< POSITIVO >>>")
+
+# módulo principal (main)
+tam = int(input("Qtos valores serão informados? "))
+
+for i in range(tam+1):
+    print()
+
+    n = int(input(f"{i+1}o. valor: "))
+
+    print(sinal_I(n))
+    print(sinal_II(n))
+    print(sinal_III(n))
